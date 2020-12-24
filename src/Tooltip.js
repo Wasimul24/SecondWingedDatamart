@@ -5,7 +5,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 export default function Tooltips() {
   return (
     <Tooltip title="Add" interactive>
-      <Button>Interactive</Button>
+      <Button>Interactivbe</Button>
     </Tooltip>
   );
 }
