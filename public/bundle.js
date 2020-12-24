@@ -24321,7 +24321,7 @@ For more info, visit https://fb.me/react-mock-scheduler`);
 
   // node_modules/@material-ui/core/esm/utils/useIsFocusVisible.js
   const React8 = __toModule(require_react());
-  const ReactDOM3 = __toModule(require_react_dom());
+  const ReactDOM2 = __toModule(require_react_dom());
   var hadKeyboardEvent = true;
   var hadFocusVisibleRecently = false;
   var hadFocusVisibleRecentlyTimeout = null;
@@ -24393,7 +24393,7 @@ For more info, visit https://fb.me/react-mock-scheduler`);
   }
   function useIsFocusVisible2() {
     var ref = React8.useCallback(function(instance) {
-      var node = ReactDOM3.findDOMNode(instance);
+      var node = ReactDOM2.findDOMNode(instance);
       if (node != null) {
         prepare(node.ownerDocument);
       }
@@ -24885,7 +24885,7 @@ For more info, visit https://fb.me/react-mock-scheduler`);
   // node_modules/@material-ui/core/esm/ButtonBase/ButtonBase.js
   const React2 = __toModule(require_react());
   const prop_types2 = __toModule(require_prop_types());
-  const ReactDOM2 = __toModule(require_react_dom());
+  const ReactDOM = __toModule(require_react_dom());
   var styles2 = {
     root: {
       display: "inline-flex",
@@ -24924,7 +24924,7 @@ For more info, visit https://fb.me/react-mock-scheduler`);
     var action = props.action, buttonRefProp = props.buttonRef, _props$centerRipple = props.centerRipple, centerRipple = _props$centerRipple === void 0 ? false : _props$centerRipple, children = props.children, classes = props.classes, className = props.className, _props$component = props.component, component = _props$component === void 0 ? "button" : _props$component, _props$disabled = props.disabled, disabled = _props$disabled === void 0 ? false : _props$disabled, _props$disableRipple = props.disableRipple, disableRipple = _props$disableRipple === void 0 ? false : _props$disableRipple, _props$disableTouchRi = props.disableTouchRipple, disableTouchRipple = _props$disableTouchRi === void 0 ? false : _props$disableTouchRi, _props$focusRipple = props.focusRipple, focusRipple = _props$focusRipple === void 0 ? false : _props$focusRipple, focusVisibleClassName = props.focusVisibleClassName, onBlur = props.onBlur, onClick = props.onClick, onFocus = props.onFocus, onFocusVisible = props.onFocusVisible, onKeyDown = props.onKeyDown, onKeyUp = props.onKeyUp, onMouseDown = props.onMouseDown, onMouseLeave = props.onMouseLeave, onMouseUp = props.onMouseUp, onTouchEnd = props.onTouchEnd, onTouchMove = props.onTouchMove, onTouchStart = props.onTouchStart, onDragLeave = props.onDragLeave, _props$tabIndex = props.tabIndex, tabIndex = _props$tabIndex === void 0 ? 0 : _props$tabIndex, TouchRippleProps = props.TouchRippleProps, _props$type = props.type, type = _props$type === void 0 ? "button" : _props$type, other = _objectWithoutProperties(props, ["action", "buttonRef", "centerRipple", "children", "classes", "className", "component", "disabled", "disableRipple", "disableTouchRipple", "focusRipple", "focusVisibleClassName", "onBlur", "onClick", "onFocus", "onFocusVisible", "onKeyDown", "onKeyUp", "onMouseDown", "onMouseLeave", "onMouseUp", "onTouchEnd", "onTouchMove", "onTouchStart", "onDragLeave", "tabIndex", "TouchRippleProps", "type"]);
     var buttonRef = React2.useRef(null);
     function getButtonNode() {
-      return ReactDOM2.findDOMNode(buttonRef.current);
+      return ReactDOM.findDOMNode(buttonRef.current);
     }
     var rippleRef = React2.useRef(null);
     var _React$useState = React2.useState(false), focusVisible = _React$useState[0], setFocusVisible = _React$useState[1];
@@ -25423,6 +25423,6 @@ For more info, visit https://fb.me/react-mock-scheduler`);
   // src/App.js
   const react18 = __toModule(require_react());
   const react_dom3 = __toModule(require_react_dom());
-  ReactDOM.render(react18.default.createElement(Buttons, null), document.getElementById("root"));
+  react_dom3.default.render(react18.default.createElement(Buttons, null), document.getElementById("root"));
 })();
 //# sourceMappingURL=bundle.js.map
